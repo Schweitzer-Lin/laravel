@@ -13,5 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	//dynamic data example
+	$data = ['name' => 'Simon'];
+	return View::make('hello', $data);
 });
